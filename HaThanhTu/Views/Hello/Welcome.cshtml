@@ -1,0 +1,10 @@
+﻿@{
+    ViewData["Title"] = "Welcome Page";
+}
+<h1>Welcome @ViewData["name"]</h1>
+<p>Your ID is @ViewData["id"]</p>
+@for (var i=0;i < (int)ViewBag.numtime; i++)
+{
+   <p>@ViewBag.Message</p>
+   <p>@ViewBag.id</p>
+}
